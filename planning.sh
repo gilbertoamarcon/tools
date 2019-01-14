@@ -5,28 +5,6 @@
 # Setting up the planning environment
 #
 
-# Common pre-compiled libraries setup
-sudo apt-get -y install python-pip
-sudo -H pip install --upgrade pip
-sudo -H pip install graphviz==0.10.1
-sudo -H pip install lark==0.0.4
-sudo -H pip install lark_parser==0.6.5
-sudo -H pip install matplotlib==1.5.1
-sudo -H pip install networkx==2.2
-sudo -H pip install numpy==1.15.4
-sudo -H pip install oyaml==0.7
-sudo -H pip install pandas==0.23.4
-sudo -H pip install yattag==1.10.1
-sudo apt-get -y install graphviz
-sudo apt-get -y install maven
-sudo apt-get -y install yaml-cpp
-sudo apt-get -y install qt5-default
-sudo apt-get -y install dvipng
-sudo apt-get -y install texlive
-sudo apt-get -y install texlive-full
-sudo apt-get -y install texlive-latex-extra
-sudo apt-get -y install texlive-fonts-recommended 
-
 
 # Dev directory
 mkdir -p ${HOME}/dev/
