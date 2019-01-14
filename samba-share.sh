@@ -1,6 +1,7 @@
 #!/bin/bash
 
-## Setup Samba shared directory with Windows machines
+## Samba
+# Setup Samba shared directory with Windows machines
 
 # Usage: ./samba-share.sh <username> <dir_path>
 # Ex: ./samba-share.sh sas ${HOME}/sea

@@ -1,5 +1,10 @@
 #!/bin/bash
 
+## WiBuntu Setup
+
+# Basic setup for WiBuntu
+
+
 # Updates/Upgrades
 sudo apt-get -y update
 

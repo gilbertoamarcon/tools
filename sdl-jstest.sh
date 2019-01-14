@@ -1,4 +1,9 @@
 #!/bin/bash
+
+## jstest
+
+# Setup:
+
 sudo apt-get -y install libpng-dev
 sudo apt-get -y install libslang2-dev
 sudo apt-get -y install libcaca-dev

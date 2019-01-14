@@ -1,14 +1,13 @@
 
 						<li><a href=apt-gets.html class=menu_button>Common packages						</a></li>
-						<li><a href=atom.html class=menu_button>						</a></li>
-						<li><a href=backup-sublime.html class=menu_button>						</a></li>
+						<li><a href=atom.html class=menu_button>Atom						</a></li>
+						<li><a href=backup-sublime.html class=menu_button>Backup Sublime						</a></li>
 						<li><a href=bash.html class=menu_button>Basic Bash 						</a></li>
-						<li><a href=boost.html class=menu_button>						</a></li>
-						<li><a href=calc.html class=menu_button>						</a></li>
-						<li><a href=chatbot.html class=menu_button>						</a></li>
-						<li><a href=chrome.html class=menu_button>						</a></li>
+						<li><a href=boost.html class=menu_button>Boost 1.64						</a></li>
+						<li><a href=calc.html class=menu_button>Calc						</a></li>
+						<li><a href=chrome.html class=menu_button>Chrome						</a></li>
 						<li><a href=commit.html class=menu_button>Commit						</a></li>
-						<li><a href=conda.html class=menu_button>						</a></li>
+						<li><a href=conda.html class=menu_button>Conda						</a></li>
 						<li><a href=create-model-box.html class=menu_button>Create a Gazebo Box						</a></li>
 						<li><a href=create-model-flat.html class=menu_button>Create Bazebo Flat						</a></li>
 						<li><a href=create-package.html class=menu_button>Create a ROS Package						</a></li>
@@ -16,23 +15,22 @@
 						<li><a href=customize-turtlebot-nav.sh.html class=menu_button>Customize Turtlebot Nav						</a></li>
 						<li><a href=deskhp.html class=menu_button>Basic Desktop Setup						</a></li>
 						<li><a href=disable-devices.html class=menu_button>Disabling Devices						</a></li>
-						<li><a href=eclipse.html class=menu_button>						</a></li>
-						<li><a href=edimax.html class=menu_button>						</a></li>
-						<li><a href=ff265.html class=menu_button>						</a></li>
+						<li><a href=eclipse.html class=menu_button>Eclipse						</a></li>
+						<li><a href=edimax.html class=menu_button>Edimar Wireless Driver Setup						</a></li>
+						<li><a href=ffmpeg.html class=menu_button>FFMPEG 						</a></li>
 						<li><a href=fpg.html class=menu_button>FPG Setup						</a></li>
-						<li><a href=gdal.html class=menu_button>						</a></li>
-						<li><a href=geotiff.html class=menu_button>						</a></li>
-						<li><a href=get-citeulike.html class=menu_button>						</a></li>
+						<li><a href=gdal.html class=menu_button>GDAL						</a></li>
+						<li><a href=geotiff.html class=menu_button>Geotiff						</a></li>
+						<li><a href=get-citeulike.html class=menu_button>Get Citeulike						</a></li>
 						<li><a href=get-madp.html class=menu_button>MADP Setup						</a></li>
 						<li><a href=get-stoqs.html class=menu_button>STOQS Setup						</a></li>
 						<li><a href=get-testbed.html class=menu_button>Get Testbed Package						</a></li>
-						<li><a href=gplib.html class=menu_button>						</a></li>
-						<li><a href=kernel-update.html class=menu_button>						</a></li>
-						<li><a href=kernel-wifi.html class=menu_button>						</a></li>
+						<li><a href=kernel-update.html class=menu_button>Kernel update						</a></li>
+						<li><a href=kernel-wifi.html class=menu_button>Kernel Wifi						</a></li>
 						<li><a href=links.html class=menu_button>Desktop Links						</a></li>
 						<li><a href=madp.html class=menu_button>MADP						</a></li>
-						<li><a href=mdpsim.html class=menu_button>						</a></li>
-						<li><a href=mendeley.html class=menu_button>						</a></li>
+						<li><a href=mdpsim.html class=menu_button>MDPSIM						</a></li>
+						<li><a href=mendeley.html class=menu_button>Mendeley						</a></li>
 						<li><a href=nvidia-fix.html class=menu_button>Nvidia Drivers Fix						</a></li>
 						<li><a href=nvidia-setup.html class=menu_button>Nvidia Drivers						</a></li>
 						<li><a href=pdf-chop.html class=menu_button>PDF Chop						</a></li>
@@ -44,10 +42,10 @@
 						<li><a href=pi-cam-server-setup.html class=menu_button>Rasp Cam Server Setup						</a></li>
 						<li><a href=planning.html class=menu_button>Planning						</a></li>
 						<li><a href=printer-graf.html class=menu_button>Printer Graf 						</a></li>
-						<li><a href=prost.html class=menu_button>						</a></li>
-						<li><a href=ps3-joy.html class=menu_button>						</a></li>
+						<li><a href=prost.html class=menu_button>PROST						</a></li>
+						<li><a href=ps3-joy.html class=menu_button>PS3-Joy						</a></li>
 						<li><a href=purge-model.html class=menu_button>Purge a gazebo model						</a></li>
-						<li><a href=pycuda.html class=menu_button>						</a></li>
+						<li><a href=pycuda.html class=menu_button>PyCuda						</a></li>
 						<li><a href=real-robot.html class=menu_button>Real Robot						</a></li>
 						<li><a href=relaxed-plan.html class=menu_button>Relaxed Plan Structures						</a></li>
 						<li><a href=remote-video.html class=menu_button>PiCam Remote Video 						</a></li>
@@ -67,24 +65,19 @@
 						<li><a href=ros-pioneer-setup.html class=menu_button>Setup Pioneers						</a></li>
 						<li><a href=ros-summit.html class=menu_button>ROS Summit 						</a></li>
 						<li><a href=ros-turtlebot.html class=menu_button>ROS Turtlebot						</a></li>
-						<li><a href=rotate-monitor.html class=menu_button>View Overleaf Paper Offline						</a></li>
-						<li><a href=rtlwifi.html class=menu_button>						</a></li>
-						<li><a href=run.sh.html class=menu_button>						</a></li>
-						<li><a href=run-voobly.html class=menu_button>						</a></li>
-						<li><a href=samba-share.html class=menu_button>Setup Samba shared directory with Windows machines						</a></li>
-						<li><a href=screen-cap.html class=menu_button>						</a></li>
-						<li><a href=sdl-jstest.html class=menu_button>						</a></li>
-						<li><a href=seq-to-video.html class=menu_button>						</a></li>
+						<li><a href=rotate-monitor.html class=menu_button>Rotate Monitor						</a></li>
+						<li><a href=rtlwifi.html class=menu_button>RTL Wifi						</a></li>
+						<li><a href=run-voobly.html class=menu_button>Voobly						</a></li>
+						<li><a href=samba-share.html class=menu_button>Samba						</a></li>
+						<li><a href=sdl-jstest.html class=menu_button>jstest						</a></li>
 						<li><a href=ssh.html class=menu_button>SSH Login						</a></li>
-						<li><a href=sublime.html class=menu_button>						</a></li>
+						<li><a href=sublime.html class=menu_button>Sublime 						</a></li>
 						<li><a href=update-hosts.html class=menu_button>Update Hosts						</a></li>
 						<li><a href=update-page.html class=menu_button>SSH Login						</a></li>
 						<li><a href=update-website.html class=menu_button>Update Repo Website						</a></li>
 						<li><a href=val-report.html class=menu_button>VAL PDF						</a></li>
-						<li><a href=view-paper.html class=menu_button>View Overleaf Paper Offline						</a></li>
 						<li><a href=website.html class=menu_button>Website Maker 						</a></li>
-						<li><a href=wibuntu-setup.html class=menu_button>						</a></li>
+						<li><a href=wibuntu-setup.html class=menu_button>WiBuntu Setup						</a></li>
 						<li><a href=wifi-fix.html class=menu_button>Wifi Fix						</a></li>
-						<li><a href=wine.html class=menu_button>						</a></li>
-						<li><a href=win-gdal.html class=menu_button>						</a></li>
+						<li><a href=wine.html class=menu_button>Wine						</a></li>
 						<li><a href=win-utc.html class=menu_button>						</a></li>

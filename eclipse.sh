@@ -1,5 +1,11 @@
 #!/bin/bash
 
+## Eclipse
+
+# The Eclipse Java IDE
+#
+
+
 wget -P ${HOME}/Downloads http://mirror.csclub.uwaterloo.ca/eclipse/oomph/epp/photon/R/eclipse-inst-linux64.tar.gz
 tar -xvzf ${HOME}/Downloads/eclipse-inst-linux64.tar.gz -C ${HOME}/Downloads/
 ${HOME}/Downloads/eclipse-installer/eclipse-inst

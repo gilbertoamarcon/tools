@@ -1,5 +1,11 @@
 #!/bin/bash
 
+
+## Boost 1.64
+
+# The Boost library
+#
+
 # Boost 1.64
 wget -P ~/Downloads/ http://sourceforge.net/projects/boost/files/boost/1.64.0/boost_1_64_0.tar.gz
 tar -xzvf ~/Downloads/boost_1_64_0.tar.gz -C ~/Downloads/

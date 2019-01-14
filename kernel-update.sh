@@ -1,5 +1,11 @@
 #!/bin/bash
+
+## Kernel update
+
+# Updating the linux kernel
 # sudo apt-get --yes install linux-headers-4.19.14
+#
+
 files="
 linux-headers-4.19.14-041914_4.19.14-041914.201901100338_all.deb
 linux-headers-4.19.14-041914-generic_4.19.14-041914.201901100338_amd64.deb

@@ -1,4 +1,10 @@
 #!/bin/bash
+
+## GDAL
+
+# The OSGEO GDAL geographic data proccessing library. 
+#
+
 wget -P ${HOME}/Downloads/ http://download.osgeo.org/gdal/2.3.0/gdal-2.3.0.tar.gz
 tar -xvzf ${HOME}/Downloads/gdal-2.3.0.tar.gz -C ${HOME}/Downloads/
 cd ${HOME}/Downloads/gdal-2.3.0/

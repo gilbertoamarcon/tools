@@ -1,5 +1,11 @@
 #!/bin/bash
 
+## PROST
+
+# The PROST plannner
+#
+
+
 hg clone http://hg@bitbucket.org/tkeller/prost ${HOME}/dev/prost/
 cd ${HOME}/dev/prost/src/search
 make

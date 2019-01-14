@@ -123,6 +123,7 @@ sudo -H pip install numpy==1.15.4
 sudo -H pip install opencv-python
 sudo -H pip install oyaml==0.7
 sudo -H pip install pandas==0.23.4
+sudo -H pip install GPy
 sudo -H pip install Pillow
 sudo -H pip install pipreqs
 sudo -H pip install plotly

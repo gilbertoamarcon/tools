@@ -1,9 +1,9 @@
 #!/bin/bash
 # =========================
-## View Overleaf Paper Offline
+## Rotate Monitor
 # =========================
 
-# Provide the link to the Overleaf project as a command line argument:
+# Rotating Monitor screen from the command line
 # ./rotate-monitor.sh 0 normal
 #
 
