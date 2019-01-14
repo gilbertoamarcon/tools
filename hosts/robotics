@@ -1,0 +1,18 @@
+127.0.0.1		localhost
+
+192.168.0.200 	summit
+192.168.0.201 	cam
+10.214.152.39 	blood
+10.214.152.41 	sweat
+10.214.152.127 	tank
+10.214.153.116 	deskhp
+10.214.153.118 	ovunc
+10.214.153.217 	gui
+
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters

@@ -1,0 +1,10 @@
+[
+
+	{"keys": ["ctrl+shift+c"], "command": "insert_snippet", "args": {"contents": "\\cmt{${0:$SELECTION}}"}},
+	{"keys": ["ctrl+shift+i"], "command": "insert_snippet", "args": {"contents": "\\emph{${0:$SELECTION}}"}},
+	{"keys": ["ctrl+shift+b"], "command": "insert_snippet", "args": {"contents": "\\textbf{${0:$SELECTION}}"}},
+	{ "keys": ["ctrl+d"], "command": "duplicate_line" },
+	{"keys": ["alt+shift+f"], "command": "reindent", "args": {"single_line": false}},
+	{ "keys": ["ctrl+k", "ctrl+i"], "command": "title_case" },
+	{ "keys": ["ctrl+shift+d"], "command": "expand_selection", "args": {"to": "word"} },
+]

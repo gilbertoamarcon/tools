@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang='en'>
+
+	<head>
+		<meta charset='utf-8'>
+		<title>Gilbertos Source</title>
+		<link rel='stylesheet' href='sty.css'>
+	</head>
+
+	<body>
+
+		<div id='content' >
+
+			<div id='side_bar' >
+
+				<header id="header">
+					<a href='https://gilbertoamarcon.github.io' target="_self" ><h1>Gilberto's Source</h1></a>
+				</header>
+
+				<div id="menu">
+					<ul>

@@ -1,0 +1,12 @@
+
+# Executable binaries
+export PATH				= $PATH:			$HOME/dev/library_folder/bin
+
+# Headers
+export CPATH			= $CPATH:			$HOME/dev/library_folder/include
+
+# Shared library binaries
+export LD_LIBRARY_PATH	= $LD_LIBRARY_PATH:	$HOME/dev/library_folder/lib
+
+# Compiler parameters
+g++ main.cpp -o main -L$HOME/dev/library_folder/lib -llibrary_folder

@@ -1,0 +1,19 @@
+[global_config]
+  suppress_multiple_term_dialog = True
+[keybindings]
+[profiles]
+  [[default]]
+    use_system_font = False
+    font = DejaVu Sans Mono 8
+    background_color = "#300a24"
+    background_image = None
+    foreground_color = "#ffffff"
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]

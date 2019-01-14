@@ -1,0 +1,70 @@
+%YAML 1.2
+---
+name: SPUDD
+file_extensions:
+  - spudd
+  - dat
+first_line_match: "-[*]-( Mode:)? C -[*]-"
+scope: source.spudd
+
+variables:
+  control_keywords: 'horizon|tolerance|variables|endaction|action|enddd|dd|unnormalised|break|case|continue|default|do|else|for|goto|then|if|return|switch|while|domain|instance|requirements|pvariables|cpfs|reward|horizon|discount|max-nondef-actions|init-state|types'
+  basic_types: 'bool|char|double|float|int|long|short|signed|unsigned|void'
+  fluent_types: 'state-fluent|action-fluent'
+  requirement_types: 'reward-deterministic|multivalued|integer-valued'
+
+contexts:
+  main:
+    - include: comments
+    - include: fluent_types
+    - include: requirement_types
+    - include: keywords
+    - include: numbers
+    - include: types
+    - include: distributions
+    - include: variables
+    - include: operators
+
+  comments:
+    - match: //
+      scope: punctuation.definition.comment.spudd
+      push:
+        - meta_scope: comment.line.double-slash.spudd
+        - match: '(\\)$\n'
+          captures:
+            1: punctuation.separator.continuation.spudd
+        - match: \n
+          pop: true
+
+
+  keywords:
+    - match: \b({{control_keywords}})\b
+      scope: keyword.control.spudd
+
+  numbers:
+    - match: '\b((0(x|X)[0-9a-fA-F]*(\.[0-9a-fA-F]+p-?\d+)?)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)([fF]|(l{1,2}|L{1,2})[uU]?|[uU](l{0,2}|L{0,2}))?\b'
+      scope: constant.numeric.spudd
+
+  operators:
+    - match: \+|=|:|/|-|%|\||\^|~|!
+      scope: string.unquoted.c
+
+  variables:
+    - match: '\b[\w|-]*\b'
+      scope: variable.other.member.c
+
+  distributions:
+    - match: '\b[A-Z][\w|-]*\b'
+      scope: variable.parameter.c
+
+  fluent_types:
+    - match: \b({{fluent_types}})\b
+      scope: variable.function.c
+
+  requirement_types:
+    - match: \b({{requirement_types}})\b
+      scope: variable.function.c
+
+  types:
+    - match: \b({{basic_types}})\b
+      scope: variable.function.c

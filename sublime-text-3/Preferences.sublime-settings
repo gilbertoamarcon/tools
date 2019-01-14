@@ -1,0 +1,13 @@
+{
+	"added_words":
+	[
+		"georeferenced"
+	],
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"font_size": 8,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Default.sublime-theme"
+}

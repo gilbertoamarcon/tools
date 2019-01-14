@@ -1,0 +1,322 @@
+%YAML 1.2
+---
+name: apl
+file_extensions: [apl,mapl,plan]
+first_line_match: "-[*]-( Mode:)? C -[*]-"
+scope: source.apl
+
+variables:
+  change: '\bincrease|decrease\b'
+  distribution: '\bnormal|uniform|constant|undefined\b'
+  temporal: '\bstart|end|overall\b'
+  basic_types: '\bduration|cost|conditions|effects\b'
+  name: '\b[\w][\w\d]*\b'
+  number: '\b((0(x|X)[0-9a-fA-F]*(\.[0-9a-fA-F]+p-?\d+)?)|(([0-9]+\.?[0-9]*)|(\.[0-9]+))((e|E)(\+|-)?[0-9]+)?)([fF]|(l{1,2}|L{1,2})[uU]?|[uU](l{0,2}|L{0,2}))?\b'
+
+contexts:
+  main:
+    - include: comments
+    - include: domain
+    - include: problem
+    - include: plan
+
+  domain:
+    - match: \b(domain)\b\s*
+      scope: keyword.control
+      push: 
+        - include: comments
+        - match: '{'
+          push:
+            - include: comments
+            - include: types
+            - include: defs
+            - include: action
+            - match: '}'
+              pop: true
+        - match: ''
+          pop: true
+
+  types:
+    - match: \b(types)\b\s*
+      scope: keyword.control
+      push: 
+        - include: comments
+        - match: '{'
+          push:
+            - include: comments
+            - match: ({{name}})
+              scope: storage.type
+            - match: '}'
+              pop: true
+        - match: ''
+          pop: true
+
+  defs:
+    - match: \b(world|state)\b\s*
+      scope: keyword.control
+      push: 
+        - include: comments
+        - match: '{'
+          push:
+            - include: comments
+            - include: function_def
+            - include: relation_def
+            - match: '}'
+              pop: true
+        - match: ''
+          pop: true
+
+  action:
+    - match: \b(action)\b\s*
+      scope: keyword.control
+      push: 
+        - include: comments
+        - match: ({{name}})
+          scope: entity.name.function
+          set:
+            - match: '\s*\('
+              push:
+                - match: ({{name}})
+                  scope: storage.type
+                  push: 
+                    - include: comments
+                    - match: ({{name}})
+                      scope: variable.name
+                      pop: true
+                - match: '\)'
+                  pop: true
+            - match: '\s*{'
+              push:
+                - include: comments
+                - match: '({{distribution}})'
+                  scope: string.quoted
+                - match: '{{temporal}}'
+                  scope: string.quoted
+                - match: '{{basic_types}}'
+                  scope:  keyword.control
+                - include: function
+                - match: '}'
+                  pop: true
+            - match: ''
+              pop: true
+
+
+  problem:
+    - match: \b(Problem)\b\s*
+      scope: keyword.control
+      push: 
+        - include: comments
+        - match: '{'
+          push:
+            - include: comments
+            - include: entities
+            - include: states
+            - include: goals
+            - include: capabilities
+            - match: '}'
+              pop: true
+        - match: ''
+          pop: true
+
+  plan:
+    - match: \b(Plan)\b\s*
+      scope: keyword.control
+      push: 
+        - include: comments
+        - match: '{'
+          push:
+            - include: comments
+            - include: plan_action
+            - match: '}'
+              pop: true
+        - match: ''
+          pop: true
+
+
+  comments:
+    - match: '//'
+      push: comment_single_line
+    - match: '/\*'
+      push: comment_multi_line
+  comment_single_line:
+    - meta_scope: comment
+    - match: '\n'
+      pop: true
+  comment_multi_line:
+    - meta_scope: comment
+    - match: '\*/'
+      pop: true
+
+  entities:
+    - match: \b(Agents|Objects)\b\s*
+      scope: keyword.control
+      push:
+        - include: comments
+        - match: '{'
+          push:
+            - include: comments
+            - match: ({{name}})
+              scope: storage.type
+              push:
+                - include: comments
+                - match: ({{name}})
+                  scope: variable.name
+                - match: ';'
+                  pop: true
+            - match: '}'
+              pop: true
+        - match: ''
+          pop: true
+
+  states:
+    - match: \b(WorldState|InitialState)\b\s*
+      scope: keyword.control
+      push: state_def
+
+  goals:
+    - match: \b(Goal)\b\s*
+      scope: keyword.control
+      push:
+        - include: comments
+        - match: '{'
+          push:
+            - include: comments
+            - match: ({{name}})
+              scope: storage.type
+              push: state_def
+            - include: function
+            - match: '}'
+              pop: true
+        - match: ''
+          pop: true
+
+  capabilities:
+    - match: \b(AgentCapabilities|TaskCapabilities)\b\s*
+      scope: keyword.control
+      push:
+        - include: comments
+        - match: '{'
+          push:
+            - include: comments
+            - include: parameter_push
+            - match: '{'
+              push:
+                - include: comments
+                - include: capability
+                - match: '}'
+                  pop: true
+            - match: '}'
+              pop: true
+        - match: ''
+          pop: true
+
+  state_def:
+    - match: '{'
+      push:
+        - include: comments
+        - include: function
+        - match: '}'
+          pop: true
+    - match: ''
+      pop: true
+
+
+  capability:
+    - match: '\b({{name}})\b\s*:\s*{{number}}'
+      captures:
+        1: variable
+        2: constant.numeric
+
+  function:
+    - include: numbers
+    - match: '=|=='
+      scope: keyword.operator.other
+      push:
+        - include: comments
+        - include: numbers
+        - include: operators
+        - match: ({{name}})
+          scope: variable
+        - match: ';'
+          pop: true
+    - include: operators
+    - match: ({{name}})
+      scope: entity.name.function
+      push:
+        - include: parameter_pop
+
+  function_def:
+    - match: function
+      scope: keyword.control
+      push:
+        - match: ({{name}})
+          scope: storage.type
+          set:
+            - match: ({{name}})
+              scope: entity.name.function
+              set:
+                - include: parameter_pop
+                - include: numbers
+                - include: operators
+                - match: ';'
+                  pop: true
+
+  plan_action:
+    - match: ({{name}})
+      scope: keyword.control
+      push:
+        - match: ({{name}})
+          scope: entity.name.function
+          set:
+            - include: parameter_pop
+            - include: numbers
+            - include: operators
+            - match: ';'
+              pop: true
+
+  relation_def:
+    - match: numeric|predicate
+      scope: keyword.control
+      push:
+        - match: ({{name}})
+          scope: entity.name.function
+          set:
+            - include: parameter_pop
+            - include: numbers
+            - include: operators
+            - match: ';'
+              pop: true
+
+  parameter_push:
+    - match: '\('
+      push:
+        - include: comments
+        - match: ({{name}})
+          scope: variable
+        - match: '\)'
+          pop: true
+
+  parameter_pop:
+    - match: '\('
+      set:
+        - include: comments
+        - match: ({{name}})
+          scope: variable
+        - match: '\)'
+          pop: true
+    - match: ''
+      pop: true
+          
+
+  numbers:
+    - include: comments
+    - match: '{{number}}'
+      scope: constant.numeric
+
+  operators:
+    - include: comments
+    - match: \=|:!
+      scope: keyword.operator.assignment
+    - match: \+|/|-|%|\||\^|~|!|\*
+      scope: keyword.operator.other
+
