@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Edimar Wireless Driver Setup
+## Edimax Wireless Driver Setup
 
 # Wireless Driver Setup for the Edimax USB Dongle. 
 #
