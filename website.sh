@@ -36,13 +36,14 @@ find . -name "*.html" -type f -print0 | xargs -0 perl -0 -pi -e 's/\#\!\/bin\/ba
 find . -name "*.html" -type f -print0 | xargs -0 perl -0 -pi -e 's/#\s*=+\n//g'
 
 # Inserting code divs
-find . -name "*.html" -type f -print0 | xargs -0  perl -0 -pi -e 's/\n(([^#\n].+)+\n)\n/\n<div class=\"codebox\">\1<\/div>\n\n/g'
+find . -name "*.html" -type f -print0 | xargs -0  perl -0 -pi -e 's/\n\s*\n/\n/g'
+find . -name "*.html" -type f -print0 | xargs -0  perl -0 -pi -e 's/\n([^#].+)((\n[^#].+)*)/\n<div class=\"codebox\">\1\2<\/div>/g'
 
 # Replacing ##
-find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/^##\(.\+\)/\n<h2>\1<\/h2>/g'
+find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/^##\s*\(.\+\)/\n<h2>\1<\/h2>/g'
 
 # Replacing #
-find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/^#\(.*\)/<br\/>\n\1\n/g'
+find . -name "*.html" -type f -print0 | xargs -0 sed -i 's/^#\s*\(.*\)/\1\n<br\/>/g'
 
 # Concat and moving
 find . -name "*.html" -type f -exec bash -c 'cat website/_prefix website/_menu website/_midfix {} website/_suffix > ~/dev/gilbertoamarcon.github.io/content/$(basename {})' \;
