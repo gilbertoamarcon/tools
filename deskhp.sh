@@ -27,15 +27,6 @@ sudo chmod +x ${HOME}/.config/terminator/
 # Sublime
 ./sublime.sh
 
-# Atom
-./atom.sh
-
-# Mendeley
-./mendeley.sh
-
-# # Chrome
-# ./chrome.sh
-
 # Color Terminal
 sed -i '/force_color_prompt=yes/s/^#//g' ${HOME}/.bashrc
 
@@ -43,7 +34,7 @@ sed -i '/force_color_prompt=yes/s/^#//g' ${HOME}/.bashrc
 ./calc.sh
 
 # Website
-# git clone git@github.com:gilbertoamarcon/gilbertoamarcon.github.io.git ${HOME}/dev/gilbertoamarcon.github.io
+git clone git@github.com:gilbertoamarcon/gilbertoamarcon.github.io.git ${HOME}/dev/gilbertoamarcon.github.io
 
 # Cleaning up
 sudo apt-get --yes autoremove
@@ -52,7 +43,7 @@ sudo apt-get --yes autoremove
 rm -Rf ${HOME}/examples.desktop
 
 # Move sidebar to the bottom
-gsettings set com.canonical.Unity.Launcher launcher-position Bottom
+# gsettings set com.canonical.Unity.Launcher launcher-position Bottom
 
 # SSH to robots
 sudo ufw allow 22
