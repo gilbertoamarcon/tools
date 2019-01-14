@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Update Personal Page Website
+## Update Personal Page
 
 # Usage:
 # ./personal-page.sh
