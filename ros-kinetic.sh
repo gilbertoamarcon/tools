@@ -43,6 +43,16 @@ sudo apt-get --yes install ros-kinetic-teleop-twist-keyboard
 # Joystick Drivers
 sudo apt-get --yes install ros-kinetic-joy
 
+# ALVAR fiducial marker tool
+sudo apt-get --yes install ros-indigo-ar-track-alvar* imagemagick
+sudo apt-get --yes install python-empy
+
+# Turtlebot
+sudo apt-get --yes install ros-indigo-turtlebot-*
+
+# JACKAL
+sudo apt-get --yes install ros-indigo-jackal-simulator ros-indigo-jackal-desktop ros-indigo-jackal-navigation
+
 # Summit xl 
 sudo apt-get --yes install ros-kinetic-summit-xl-common
 # sudo apt-get --yes install ros-kinetic-summit-xl-sim
