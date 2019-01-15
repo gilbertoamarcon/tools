@@ -22,7 +22,7 @@ cd ${HOME}/Documents
 # You can use echo to print:
 echo Hello
 
-# Note how he value of environment variables are evaluated and printed:
+# Note how the value of environment variables are evaluated and printed:
 echo ${HOME}/Documents
 
 # You can also unfold a number range:
