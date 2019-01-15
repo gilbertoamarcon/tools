@@ -34,7 +34,7 @@ sed -i '/force_color_prompt=yes/s/^#//g' ${HOME}/.bashrc
 ./calc.sh
 
 # Website
-git clone git@github.com:gilbertoamarcon/gilbertoamarcon.github.io.git ${HOME}/dev/gilbertoamarcon.github.io
+# git clone git@github.com:gilbertoamarcon/gilbertoamarcon.github.io.git ${HOME}/dev/gilbertoamarcon.github.io
 
 # Cleaning up
 sudo apt-get -y autoremove
