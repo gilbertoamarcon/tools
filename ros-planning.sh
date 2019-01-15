@@ -18,8 +18,8 @@ https://gilbertoamarcon.github.io/content/ros-kinetic.html
 sed -i '/force_color_prompt=yes/s/^#//g' ${HOME}/.bashrc
 
 # Configure your git identity on your machine:
-git config --global user.email "<your git email>"
-git config --global user.name "<your name>"	
+git config --global user.email "your git email"
+git config --global user.name "your name"	
 
 # Alternativelly setup the Sublime text editor:
 https://gilbertoamarcon.github.io/content/sublime.html
