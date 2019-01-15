@@ -57,6 +57,7 @@ sudo apt-get -y install libgdal-dev
 sudo apt-get -y install libjcommander-java
 sudo apt-get -y install libpg
 sudo apt-get -y install libxerces*
+sudo apt-get -y install libyaml-cpp-dev
 sudo apt-get -y install libyaml-cpp0.5v5
 sudo apt-get -y install linux-headers-generic
 sudo apt-get -y install lp-solve
