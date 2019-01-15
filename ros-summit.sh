@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## ROS Summit 
-# This scrip covers launching basic operations for summit
+# This scrip covers launching and basic operations for summit
 # 
 
 # =======================================================

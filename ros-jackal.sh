@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ## ROS Jackal 
-# This scrip covers launching basic operations for jackal
+# This scrip covers launching and basic operations for jackal
 # 
 
 # =======================================================

@@ -2,7 +2,7 @@
 
 ## ROS Turtlebot
 
-# This scrip covers launching basic operations for turtlebot in ROS Indigo.
+# This scrip covers launching and basic operations for turtlebot in ROS Indigo.
 #
 
 # =======================================================

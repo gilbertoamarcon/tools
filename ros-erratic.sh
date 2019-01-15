@@ -2,7 +2,7 @@
 
 ## ROS Erratic
 
-# This scrip covers launching basic operations for erratic in ROS Indigo.
+# This scrip covers launching and basic operations for erratic in ROS Indigo.
 #
 
 # =======================================================
