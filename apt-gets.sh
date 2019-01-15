@@ -62,6 +62,12 @@ sudo apt-get -y install linux-headers-generic
 sudo apt-get -y install lp-solve
 sudo apt-get -y install maven
 sudo apt-get -y install meld
+sudo apt-get -y install doxygen
+sudo apt-get -y install texlive
+sudo apt-get -y install texlive-fonts-recommended 
+sudo apt-get -y install texlive-fonts-recommended  
+sudo apt-get -y install texlive-full
+sudo apt-get -y install texlive-latex-extra
 sudo apt-get -y install nautilus-dropbox
 sudo apt-get -y install nautilus-open-terminal
 sudo apt-get -y install openjfx
