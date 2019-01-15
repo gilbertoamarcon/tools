@@ -9,7 +9,7 @@ sudo apt-get purge nvidia-*
 sudo apt-get autoremove
 sudo apt-get clean
 sudo add-apt-repository ppa:graphics-drivers/ppa -y
-sudo apt-get update
-sudo apt-get install nvidia-415
+sudo apt-get -y update
+sudo apt-get -y install nvidia-415
 sudo reboot
 
