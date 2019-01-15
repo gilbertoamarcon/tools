@@ -18,7 +18,7 @@ git clone git@gitlab.com:human-machine-teaming/planning/mapl-results.git ${HOME}
 mkdir -p ${HOME}/dev/cfmatup/sandbox
 
 # Actuplan setup
-git clone git@gitlab.com:human-machine-teaming/planning/actuplan-dev.git 
+git clone git@gitlab.com:human-machine-teaming/planning/actuplan-dev.git ${HOME}/dev/actuplan-dev
 cd ${HOME}/dev/actuplan-dev
 ./scripts/setup.sh
 
