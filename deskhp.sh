@@ -20,7 +20,7 @@ git config --global user.email "gilbertoamarcon@gmail.com"
 git config --global user.name "Gilberto Marcon"	
 
 # Terminator
-sudo apt-get --yes install terminator
+sudo apt-get -y install terminator
 sudo cp -Rf terminator ${HOME}/.config/
 sudo chmod +x ${HOME}/.config/terminator/
 
@@ -37,7 +37,7 @@ sed -i '/force_color_prompt=yes/s/^#//g' ${HOME}/.bashrc
 git clone git@github.com:gilbertoamarcon/gilbertoamarcon.github.io.git ${HOME}/dev/gilbertoamarcon.github.io
 
 # Cleaning up
-sudo apt-get --yes autoremove
+sudo apt-get -y autoremove
 
 # Removing Examples folder
 rm -Rf ${HOME}/examples.desktop

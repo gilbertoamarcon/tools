@@ -83,11 +83,6 @@ sudo apt-get -y install qt5-default
 sudo apt-get -y install samba
 sudo apt-get -y install screen
 sudo apt-get -y install sshfs
-sudo apt-get -y install texlive
-sudo apt-get -y install texlive-fonts-recommended 
-sudo apt-get -y install texlive-fonts-recommended  
-sudo apt-get -y install texlive-full
-sudo apt-get -y install texlive-latex-extra
 sudo apt-get -y install tree
 sudo apt-get -y install vlc
 sudo apt-get -y install wxgtk3.0-dev

@@ -62,7 +62,6 @@ sudo apt-get --yes install python
 sudo apt-get --yes install python-dev
 # sudo apt-get --yes install qt5-default
 sudo apt-get --yes install realpath
-# sudo apt-get --yes install texlive-full
 sudo apt-get --yes install unzip
 sudo apt-get --yes install linux-libc-dev
 sudo apt-get --yes upgrade cmake
