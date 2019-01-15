@@ -10,7 +10,7 @@
 ## Mapping
 # =======================================================
 
-# We will use 4 terminal windows in this tutorial. 
+# We will use four terminal windows in this tutorial. 
 # Please go ahead and have all of them open.
 # You can use terminator to make your life easier. 
 
@@ -33,12 +33,12 @@ roslaunch jackal_viz view_robot.launch config:=gmapping
 # This will assign a goal position to the robot. 
 # Note how the robot will autonomously drive to that location.
 
-# 6. Use to following command on the fourth terminal window to same to current map to the disk:
+# 6. Use to following command on the fourth terminal window to save to current map to the disk:
 rosrun map_server map_saver -f ${HOME}/Documents/map
 
 
 # 7. Quit all processes running across all terminals and repeat the whole process again. 
-# Try a get a nice map of the world and store it on file.
+# Try to produce a nice map of the world and store it on file.
 
 # =======================================================
 ## Navigation
@@ -55,5 +55,9 @@ roslaunch jackal_navigation amcl_demo.launch map_file:=${HOME}/Documents/map.yam
 # 3. Launch Rviz for localization: 
 roslaunch jackal_viz view_robot.launch config:=localization
 
-# 4. In Rviz, use the "2D Nav Goal" button again to tell the robot to go to various places in the map,
+# 4. In Rviz, note how the robot position can be initialized at an incorrect location.
+# To fix that, use the "2D Pose Estimate" button again to give the robot a better initial position estimate in the map,
+
+# 5. In Rviz, use the "2D Nav Goal" button again to tell the robot to go to various places in the map,
+# As the robot moves around, you will see that the localization accuracy will improve.
 
