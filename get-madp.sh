@@ -6,7 +6,6 @@
 # This script sets up MADP.
 #
 
-sudo apt-get --yes install doxygen
 sudo apt-get --yes install liblpsolve55-dev
 sudo apt-get --yes install libxml2-dev
 sudo apt-get --yes install libgmp3-dev

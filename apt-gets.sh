@@ -29,7 +29,6 @@ sudo apt-get -y install default-jdk
 sudo apt-get -y install default-jre
 sudo apt-get -y install dia
 sudo apt-get -y install docker.io
-sudo apt-get -y install doxygen
 sudo apt-get -y install dvipng
 sudo apt-get -y install exiv2
 sudo apt-get -y install ffmpeg

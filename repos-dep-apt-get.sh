@@ -24,7 +24,6 @@ sudo apt-get --yes install coinor-*
 sudo apt-get --yes install curl
 sudo apt-get --yes install default-jdk
 sudo apt-get --yes install default-jre
-sudo apt-get --yes install doxygen
 sudo apt-get --yes install flex
 sudo apt-get --yes install g++
 sudo apt-get --yes install g++-multilib
