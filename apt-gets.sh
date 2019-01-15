@@ -36,6 +36,7 @@ sudo apt-get -y install filezilla
 sudo apt-get -y install firefox
 sudo apt-get -y install gdal-bin
 sudo apt-get -y install gimp
+sudo apt-get -y install terminator
 sudo apt-get -y install git
 sudo apt-get -y install gmt
 sudo apt-get -y install gmt-dcw
