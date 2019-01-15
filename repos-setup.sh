@@ -18,7 +18,8 @@ qmake
 make
 
 # Adding the lib folder to $LD_LIBRARY_PATH:
-printf "\n# i-CiFHaR:\nexport LD_LIBRARY_PATH=~/dev/icifhar/lib\n" >> ~/.bashrc
+
+printf "\n# i-CiFHaR:\nexport LD_LIBRARY_PATH=~/dev/icifhar/lib:$LD_LIBRARY_PATH\n" >> ${HOME}/.bashrc
 
 # ===========================================================================
 ## MACPDDL

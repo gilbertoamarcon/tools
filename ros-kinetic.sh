@@ -15,46 +15,50 @@ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C
 wget http://packages.ros.org/ros.key -O - | sudo apt-key add -
 
 # First, make sure your Debian package index is up-to-date:
-sudo apt-get --yes update
+sudo apt-get -y update
 
 # Desktop-Full Install: (Recommended)
-sudo apt-get --yes install ros-kinetic-desktop-full
+sudo apt-get -y install ros-kinetic-desktop-full
 
 # Initialize rosdep
 sudo rosdep init
 rosdep update
 
 # Environment setup
-printf "\n# ROS:\nsource /opt/ros/kinetic/setup.bash\n" >> ~/.bashrc
-source ~/.bashrc
+printf "\n# ROS:\nsource /opt/ros/kinetic/setup.bash\n" >> ${HOME}/.bashrc
+source ${HOME}/.bashrc
 
 # Getting rosinstall
-sudo apt-get --yes install python-rosinstall
+sudo apt-get -y install python-rosinstall
 
 # Changing ROS ownership
-sudo chown -R $USER ~/.ros
+sudo chown -R $USER ${HOME}/.ros
 
 # geographic-msgs
-sudo apt-get --yes install ros-kinetic-geographic-msgs
+sudo apt-get -y install ros-kinetic-geographic-msgs
 
 # Keyboard twist
-sudo apt-get --yes install ros-kinetic-teleop-twist-keyboard
+sudo apt-get -y install ros-kinetic-teleop-twist-keyboard
 
 # Joystick Drivers
-sudo apt-get --yes install ros-kinetic-joy
+sudo apt-get -y install ros-kinetic-joy
 
 # ALVAR fiducial marker tool
-sudo apt-get --yes install ros-indigo-ar-track-alvar* imagemagick
-sudo apt-get --yes install python-empy
+sudo apt-get -y install ros-indigo-ar-track-alvar* imagemagick
+sudo apt-get -y install python-empy
 
 # Turtlebot
-sudo apt-get --yes install ros-indigo-turtlebot-*
+sudo apt-get -y install ros-indigo-turtlebot-*
 
 # JACKAL
-sudo apt-get --yes install ros-indigo-jackal-simulator ros-indigo-jackal-desktop ros-indigo-jackal-navigation
+sudo apt-get -y install ros-indigo-jackal-simulator ros-indigo-jackal-desktop ros-indigo-jackal-navigation
 
 # Summit xl 
-sudo apt-get --yes install ros-kinetic-summit-xl-common
-# sudo apt-get --yes install ros-kinetic-summit-xl-sim
+sudo apt-get -y install ros-kinetic-summit-xl-common
+# sudo apt-get -y install ros-kinetic-summit-xl-sim
 # sudo sed -ie 's/pad_teleop/summit_xl_control/g' /opt/ros/kinetic/share/summit_xl_pad/launch/summit_xl_pad.launch
 
+
+printf "export ROS_MASTER_URI=http://127.0.0.1:11311/\n" >> ${HOME}/.bashrc
+
+source ${HOME}/.bashrc
