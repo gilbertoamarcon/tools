@@ -67,6 +67,7 @@
 						<li><a href=ros-summit.html class=menu_button>ROS Summit 						</a></li>
 						<li><a href=ros-turtlebot.html class=menu_button>ROS Turtlebot						</a></li>
 						<li><a href=ros-tutorial.html class=menu_button>ROS Tutorial: Jackal 						</a></li>
+						<li><a href=ros-ws-packages-worlds.html class=menu_button>ROS Tutorial: Workspaces 						</a></li>
 						<li><a href=rotate-monitor.html class=menu_button>Rotate Monitor						</a></li>
 						<li><a href=rtlwifi.html class=menu_button>RTL Wifi						</a></li>
 						<li><a href=run-voobly.html class=menu_button>Voobly						</a></li>
