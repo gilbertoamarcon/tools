@@ -23,7 +23,7 @@ StartLimitBurst=3
 
 [Install]
 WantedBy=multi-user.target' > /etc/systemd/system/dropbox.service"
-sudo systemctl daemon-reload
-sudo systemctl enable dropbox
-sudo systemctl start dropbox
-sudo systemctl status dropbox
+systemctl daemon-reload
+systemctl enable dropbox
+systemctl start dropbox
+systemctl status dropbox
