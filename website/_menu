@@ -4,6 +4,7 @@
 						<li><a href=backup-sublime.html class=menu_button>Backup Sublime						</a></li>
 						<li><a href=bash.html class=menu_button>Basic Bash 						</a></li>
 						<li><a href=boost.html class=menu_button>Boost 1.64						</a></li>
+						<li><a href=box-sync.html class=menu_button>Box-Sync						</a></li>
 						<li><a href=calc.html class=menu_button>Calc						</a></li>
 						<li><a href=chrome.html class=menu_button>Chrome						</a></li>
 						<li><a href=commit.html class=menu_button>Commit						</a></li>
@@ -15,6 +16,7 @@
 						<li><a href=customize-turtlebot-nav.sh.html class=menu_button>Customize Turtlebot Nav						</a></li>
 						<li><a href=deskhp.html class=menu_button>Basic Desktop Setup						</a></li>
 						<li><a href=disable-devices.html class=menu_button>Disabling Devices						</a></li>
+						<li><a href=dropbox.html class=menu_button>Dropbox Headless 						</a></li>
 						<li><a href=eclipse.html class=menu_button>Eclipse						</a></li>
 						<li><a href=edimax.html class=menu_button>Edimax Wireless Driver						</a></li>
 						<li><a href=ffmpeg.html class=menu_button>FFMPEG 						</a></li>

@@ -22,6 +22,7 @@ sudo apt-get -y install avahi-daemon
 sudo apt-get -y install bookworm
 sudo apt-get -y install build-essential
 sudo apt-get -y install cmake
+sudo apt-get -y install solaar-gnome3
 sudo apt-get -y install compizconfig-settings-manager
 sudo apt-get -y install csvtool
 sudo apt-get -y install curlftpfs
@@ -38,6 +39,7 @@ sudo apt-get -y install gdal-bin
 sudo apt-get -y install gimp
 sudo apt-get -y install terminator
 sudo apt-get -y install git
+sudo apt-get -y install libnetcdf-dev
 sudo apt-get -y install gmt
 sudo apt-get -y install gmt-dcw
 sudo apt-get -y install gmt-gshhg
@@ -46,6 +48,7 @@ sudo apt-get -y install graphviz
 sudo apt-get -y install grub-customizer
 sudo apt-get -y install guvcview
 sudo apt-get -y install hdfview
+sudo apt-get -y install davfs2
 sudo apt-get -y install htop
 sudo apt-get -y install impressive
 sudo apt-get -y install inotify-tools

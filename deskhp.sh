@@ -33,6 +33,9 @@ sed -i '/force_color_prompt=yes/s/^#//g' ${HOME}/.bashrc
 # Calc
 ./calc.sh
 
+# Box Sync
+./box-sync.sh
+
 # Website
 # git clone git@github.com:gilbertoamarcon/gilbertoamarcon.github.io.git ${HOME}/dev/gilbertoamarcon.github.io
 

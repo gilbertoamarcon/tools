@@ -1,13 +1,11 @@
 #!/usr/bin/env python
 
 import argparse
-
 import pandas as pd
 import oyaml as yaml
-from collections import OrderedDict
+import re
 
 pd.set_option('display.expand_frame_repr', False)
-
 
 def main():
 
@@ -18,7 +16,7 @@ def main():
 			nargs='?',
 			type=str,
 			required=True,
-			help='Input file (yaml).'
+			help='Input file (json).'
 		)
 	parser.add_argument(
 			'-m','--match',
@@ -36,18 +34,18 @@ def main():
 		)
 	args = parser.parse_args()
 
-
-
 	df = pd.read_json(args.input_filename)
 
+	divs = re.compile(r'<[^>]*>')
+	nls = re.compile(r'[\\n<>]')
 	if args.match:
 		founds = df[df[args.column].str.contains(args.match)]
 		for index,found in founds.iterrows():
-			for k,v in found.to_dict().items():
-				print k,': ',v
-				print '---'
-				print ''
-			print '---'
+			out = yaml.safe_dump(found.to_dict())
+			out = divs.sub('',out)
+			out = nls.sub('',out)
+			print out
+			print 80*'-'
 	else:
 		print df
 
