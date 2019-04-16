@@ -54,6 +54,12 @@ sudo ufw allow 22
 # Nvidia drivers
 ./nvidia-setup.sh
 
+# Aliases
+./aliases.sh
+
+# JS-fix
+./js-mouse.sh
+
 # Restarting the machine
 sudo reboot
 

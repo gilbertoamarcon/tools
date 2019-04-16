@@ -10,15 +10,15 @@ Description=Dropbox Service
 After=network.target
 
 [Service]
-ExecStart=/bin/sh -c '/usr/bin/dropbox start'
-ExecStop=/bin/sh -c '/usr/bin/dropbox stop'
-PIDFile=${HOME}/.dropbox/dropbox.pid
+ExecStart=/usr/bin/dropbox start
+ExecStop=/usr/bin/dropbox stop
+PIDFile=/home/gilberto/.dropbox/dropbox.pid
 User=gilberto
 Group=gilberto
 Type=forking
 Restart=on-failure
 RestartSec=5
-StartLimitInterval=60s
+StartLimitInterval=60
 StartLimitBurst=3
 
 [Install]

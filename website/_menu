@@ -1,4 +1,5 @@
 
+						<li><a href=aliases.html class=menu_button>Aliases						</a></li>
 						<li><a href=apt-gets.html class=menu_button>Common packages						</a></li>
 						<li><a href=atom.html class=menu_button>Atom						</a></li>
 						<li><a href=backup-sublime.html class=menu_button>Backup Sublime						</a></li>
@@ -25,8 +26,11 @@
 						<li><a href=geotiff.html class=menu_button>Geotiff						</a></li>
 						<li><a href=get-citeulike.html class=menu_button>Get Citeulike						</a></li>
 						<li><a href=get-madp.html class=menu_button>MADP Setup						</a></li>
+						<li><a href=get-opengm.html class=menu_button>OpenGM Setup						</a></li>
 						<li><a href=get-stoqs.html class=menu_button>STOQS Setup						</a></li>
 						<li><a href=get-testbed.html class=menu_button>Get Testbed Package						</a></li>
+						<li><a href=ipa.html class=menu_button>						</a></li>
+						<li><a href=js-mouse.html class=menu_button>JS mouse fix 						</a></li>
 						<li><a href=kernel-update.html class=menu_button>Kernel update						</a></li>
 						<li><a href=kernel-wifi.html class=menu_button>Kernel Wifi						</a></li>
 						<li><a href=links.html class=menu_button>Desktop Links						</a></li>
@@ -75,6 +79,7 @@
 						<li><a href=run-voobly.html class=menu_button>Voobly						</a></li>
 						<li><a href=samba-share.html class=menu_button>Samba						</a></li>
 						<li><a href=sdl-jstest.html class=menu_button>jstest						</a></li>
+						<li><a href=setup-lsyncd.html class=menu_button>Setup lsyncd						</a></li>
 						<li><a href=ssh.html class=menu_button>SSH Login						</a></li>
 						<li><a href=sublime.html class=menu_button>Sublime 						</a></li>
 						<li><a href=update-hosts.html class=menu_button>Update Hosts						</a></li>

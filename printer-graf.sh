@@ -18,6 +18,8 @@
 # On the right, in the "SMB Printer" section, type
 winprn.engr.oregonstate.edu/graf204
 winprn.engr.oregonstate.edu/graf200-prn1
+winprn.engr.oregonstate.edu/graf302-clr # HP CLJ Enterprise M651DN
+winprn.engr.oregonstate.edu/graf302-prn # HP LJ Enterprise M525DN
 
 # Under "Authentication", provide username with ONID/ prefix and ONID password:
 ONID/marcondg
