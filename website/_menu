@@ -39,6 +39,7 @@
 						<li><a href=mendeley.html class=menu_button>Mendeley						</a></li>
 						<li><a href=nvidia-fix.html class=menu_button>Nvidia Drivers Fix						</a></li>
 						<li><a href=nvidia-setup.html class=menu_button>Nvidia Drivers						</a></li>
+						<li><a href=pcsx2.html class=menu_button>PCSX2 						</a></li>
 						<li><a href=pdf-chop.html class=menu_button>PDF Chop						</a></li>
 						<li><a href=personal.html class=menu_button>Personal						</a></li>
 						<li><a href=personal-page.html class=menu_button>Update Personal Page						</a></li>
@@ -68,6 +69,7 @@
 						<li><a href=ros-indigo.html class=menu_button>ROS Indigo						</a></li>
 						<li><a href=ros-jackal.html class=menu_button>ROS Jackal 						</a></li>
 						<li><a href=ros-kinetic.html class=menu_button>ROS kinetic						</a></li>
+						<li><a href=roslaunch.html class=menu_button>ROS Launch						</a></li>
 						<li><a href=ros-pioneer-setup.html class=menu_button>Setup Pioneers						</a></li>
 						<li><a href=ros-planning.html class=menu_button>ROS Planning Laptop Setup						</a></li>
 						<li><a href=ros-summit.html class=menu_button>ROS Summit 						</a></li>
