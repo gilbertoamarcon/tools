@@ -25,7 +25,7 @@ find . -name "*.html" -type f -exec bash -c 'printf "#<a href=https://raw.github
 
 # Building menu
 echo "" > website/_menu
-find . -name "*.html" -type f -exec bash -c 'echo "						<li><a href="$(basename {})" class=menu_button>$(cat {} | grep -m 1 '"'"'##'"'"' | sed -e '"'"'s/##\s*//g'"'"')						</a></li>" >> website/_menu' \;
+find . -name "*.html" -type f -exec bash -c 'echo "						<li><a href="$(${{}%.*})" class=menu_button>$(cat {} | grep -m 1 '"'"'##'"'"' | sed -e '"'"'s/##\s*//g'"'"')						</a></li>" >> website/_menu' \;
 sort -db website/_menu > aux
 mv aux website/_menu
 
