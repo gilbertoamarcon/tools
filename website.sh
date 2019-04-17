@@ -9,22 +9,19 @@
 rm ~/dev/gilbertoamarcon.github.io/content/*.html
 rm *.html > /dev/null 2>&1
 
-# Adding raw link
-find . -name "*.sh" -type f -exec bash -c 'printf "#<a href=https://raw.githubusercontent.com/gilbertoamarcon/tools/master/$(basename {}) target=_blank>Follow this link for the raw script.</a>" >> {}' \;
-
 # Copying sh scripts
 find . -name "*.sh" -type f -exec chmod +x {} \;
 chmod +x *.sh
 find . -name "*.sh" -type f -exec cp {} {}.html \;
-
-# Removing link line
-sed -i '/^\#<a href=https/d' *.sh
 
 # Renaming bash to HTML
 rename 's/(.*).sh.html/$1.html/' *.sh.html
 
 # Escaping HTML
 sed -i 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g' *.html
+
+# Adding raw link
+find . -name "*.html" -type f -exec bash -c 'printf "#<a href=https://raw.githubusercontent.com/gilbertoamarcon/tools/master/$(basename {}) target=_blank>Follow this link for the raw script.</a>" >> {}' \;
 
 # Building menu
 echo "" > website/_menu
