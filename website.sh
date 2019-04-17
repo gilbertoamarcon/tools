@@ -21,11 +21,11 @@ rename 's/(.*).sh.html/$1.html/' *.sh.html
 sed -i 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g' *.html
 
 # Adding raw link
-find . -name "*.html" -type f -exec bash -c 'printf "#<a href=https://raw.githubusercontent.com/gilbertoamarcon/tools/master/$(basename {}) target=_blank>Follow this link for the raw script.</a>" >> {}' \;
+find . -name "*.html" -type f -exec bash -c 'printf "#<a href=https://raw.githubusercontent.com/gilbertoamarcon/tools/master/$(basename {} | sed s/.html$/.sh/g) target=_blank>Follow this link for the raw script.</a>" >> {}' \;
 
 # Building menu
 echo "" > website/_menu
-find . -name "*.html" -type f -exec bash -c 'echo "						<li><a href="$(${{}%.*})" class=menu_button>$(cat {} | grep -m 1 '"'"'##'"'"' | sed -e '"'"'s/##\s*//g'"'"')						</a></li>" >> website/_menu' \;
+find . -name "*.html" -type f -exec bash -c 'echo "						<li><a href="$(basename {})" class=menu_button>$(cat {} | grep -m 1 '"'"'##'"'"' | sed -e '"'"'s/##\s*//g'"'"')						</a></li>" >> website/_menu' \;
 sort -db website/_menu > aux
 mv aux website/_menu
 
