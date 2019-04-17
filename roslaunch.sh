@@ -5,7 +5,7 @@
 # A quick tutorial into ROS launch.
 #
 
-# Please see below an example launch file below.
+# Please see an example launch file below:
 <launch>
     <rosparam file="$(find glider_kayak_sim)/yaml/sim_params.yaml"/>
     <param name="package_path" value="$(find glider_kayak_sim)"/>
@@ -15,7 +15,7 @@
 </launch>
 
 # Launch files can make your life easier when developing large projects in ROS.
-# You can use launch files to launch multiple files at once and define global parameters.
+# You can use launch files to launch multiple nodes at once and define global parameters.
 
 # Note the rosparam tag:
 <rosparam file="$(find glider_kayak_sim)/yaml/sim_params.yaml"/>
