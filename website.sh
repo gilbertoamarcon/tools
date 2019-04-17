@@ -23,6 +23,9 @@ sed -i '/^\#<a href=https/d' *.sh
 # Renaming bash to HTML
 rename 's/(.*).sh.html/$1.html/' *.sh.html
 
+# Escaping HTML
+sed -i 's/&/\&amp;/g; s/</\&lt;/g; s/>/\&gt;/g; s/"/\&quot;/g; s/'"'"'/\&#39;/g' *.html
+
 # Building menu
 echo "" > website/_menu
 find . -name "*.html" -type f -exec bash -c 'echo "						<li><a href="$(basename {})" class=menu_button>$(cat {} | grep -m 1 '"'"'##'"'"' | sed -e '"'"'s/##\s*//g'"'"')						</a></li>" >> website/_menu' \;
