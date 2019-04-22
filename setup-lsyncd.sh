@@ -10,6 +10,9 @@ remote_dir=$2
 local_dir=$3
 local_host=$(hostname)
 local_user=$(whoami)
+delay=1
+
+mkdir -p $HOME/$local_dir
 
 known_hosts=-oStrictHostKeyChecking=no
 
@@ -19,7 +22,7 @@ echo $remote_key >> $HOME/.ssh/authorized_keys
 
 # Running daemon on remote
 # comm="lsyncd -nodaemon -rsync $remote_dir $local_user@$local_host:$local_dir"
-comm="lsyncd -rsync $remote_dir $local_user@$local_host:$local_dir"
+comm="lsyncd -delay $delay -rsync $remote_dir $local_user@$local_host:$local_dir"
 echo $comm
 ssh $known_hosts $remote $comm
 

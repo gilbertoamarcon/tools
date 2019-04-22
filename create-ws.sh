@@ -10,14 +10,14 @@
 hdir=$(pwd)
 
 # Workspace creation
-printf "Creating workspace at: \\n$HOME/ros-ws/$1/\\n"
-mkdir -p ~/ros-ws/$1/src
-cd ~/ros-ws/$1/src
+printf "Creating workspace at: \\n$HOME/$1/\\n"
+mkdir -p ${HOME}/$1/src
+cd ${HOME}/$1/src
 catkin_init_workspace
-cd ~/ros-ws/$1/
+cd ${HOME}/$1/
 catkin_make
-source ~/ros-ws/$1/devel/setup.bash
-printf "\n# $1 ROS workspace:\nsource $HOME/ros-ws/$1/devel/setup.bash\n" >> ~/.bashrc
+source ${HOME}/$1/devel/setup.bash
+printf "\n# $1 ROS workspace:\nsource $HOME/$1/devel/setup.bash\n" >> ${HOME}/.bashrc
 
 # Back to original working directory
 cd $hdir

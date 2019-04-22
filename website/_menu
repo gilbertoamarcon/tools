@@ -30,6 +30,7 @@
 						<li><a href=get-stoqs.html class=menu_button>STOQS Setup						</a></li>
 						<li><a href=get-testbed.html class=menu_button>Get Testbed Package						</a></li>
 						<li><a href=ipa.html class=menu_button>						</a></li>
+						<li><a href=jabref.html class=menu_button>JabRef 						</a></li>
 						<li><a href=js-mouse.html class=menu_button>JS mouse fix 						</a></li>
 						<li><a href=kernel-update.html class=menu_button>Kernel update						</a></li>
 						<li><a href=kernel-wifi.html class=menu_button>Kernel Wifi						</a></li>
@@ -84,6 +85,8 @@
 						<li><a href=setup-lsyncd.html class=menu_button>Setup lsyncd						</a></li>
 						<li><a href=ssh.html class=menu_button>SSH Login						</a></li>
 						<li><a href=sublime.html class=menu_button>Sublime 						</a></li>
+						<li><a href=terminator.html class=menu_button>Terminator 						</a></li>
+						<li><a href=tmux.html class=menu_button>Tmux 						</a></li>
 						<li><a href=update-hosts.html class=menu_button>Update Hosts						</a></li>
 						<li><a href=update-page.html class=menu_button>SSH Login						</a></li>
 						<li><a href=update-website.html class=menu_button>Update Repo Website						</a></li>

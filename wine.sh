@@ -14,7 +14,7 @@ sudo apt-get --yes install libwine
 sudo apt-get --yes install libwine:i386
 sudo apt-get --yes install fonts-wine
 # Copy AoC through wine
-cp ${HOME}/Downloads/aoe.zip ${HOME}/.wine/dosdevices/c:/
+cp ${HOME}/Downloads/apps/aoe.zip ${HOME}/.wine/dosdevices/c:/
 unzip ${HOME}/.wine/dosdevices/c:/aoe.zip -d ${HOME}/.wine/dosdevices/c:/
 rm ${HOME}/.wine/dosdevices/c:/aoe.zip
 # winetricks

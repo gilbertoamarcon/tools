@@ -15,12 +15,12 @@ shift
 hdir=$(pwd)
 
 # Package creation
-printf "Creating package at: \\n$HOME/ros-ws/$wsname/src/\\n"
-cd ~/ros-ws/$wsname/src/
+printf "Creating package at: \\n$HOME/$wsname/src/\\n"
+cd ${HOME}/$wsname/src/
 echo catkin_create_pkg $paname rospy "$@"
 catkin_create_pkg $paname rospy "$@"
-source ~/ros-ws/$wsname/devel/setup.bash
-source ~/.bashrc
+source ${HOME}/$wsname/devel/setup.bash
+source ${HOME}/.bashrc
 
 # Back to original working directory
 cd $hdir

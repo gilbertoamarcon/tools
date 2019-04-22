@@ -20,9 +20,7 @@ git config --global user.email "gilbertoamarcon@gmail.com"
 git config --global user.name "Gilberto Marcon"	
 
 # Terminator
-sudo apt-get -y install terminator
-sudo cp -Rf terminator ${HOME}/.config/
-sudo chmod +x ${HOME}/.config/terminator/
+./terminator.sh
 
 # Sublime
 ./sublime.sh
@@ -37,7 +35,7 @@ sed -i '/force_color_prompt=yes/s/^#//g' ${HOME}/.bashrc
 ./box-sync.sh
 
 # Website
-# git clone git@github.com:gilbertoamarcon/gilbertoamarcon.github.io.git ${HOME}/dev/gilbertoamarcon.github.io
+git clone git@github.com:gilbertoamarcon/gilbertoamarcon.github.io.git ${HOME}/dev/gilbertoamarcon.github.io
 
 # Cleaning up
 sudo apt-get -y autoremove
