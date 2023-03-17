@@ -5,7 +5,7 @@
 # Setting up the Sublime text editor
 #
 
-build=3207
+build=3211
 filename=sublime-text_build-${build}_amd64.deb
 
 wget -P $HOME/Downloads/ https://download.sublimetext.com/$filename
